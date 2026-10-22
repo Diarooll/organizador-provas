@@ -15,3 +15,7 @@ materia 1:N avaliacao 1:N tarefa
 - `ddl-auto: validate`: quem cria tabela é o Flyway
 - Nunca editar migration já aplicada: criar uma nova (V2__...)
 - Explicar o que cada coisa faz antes de pedir pra executar
+
+## Plano atual
+API REST do backend: `docs/plano-api.md`. O usuário digita o código; o Claude explica cada passo e revisa.
+Status: Passo 1 (entidades JPA) em andamento.
