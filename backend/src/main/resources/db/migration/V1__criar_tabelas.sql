@@ -1,0 +1,22 @@
+CREATE TABLE materia (
+    id BIGSERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE avaliacao (
+    id BIGSERIAL PRIMARY KEY,
+    titulo VARCHAR(150) NOT NULL,
+    tipo VARCHAR(30) NOT NULL,
+    data DATE NOT NULL,
+    conteudo TEXT,
+    status VARCHAR(20) NOT NULL DEFAULT 'PENDENTE',
+    materia_id BIGINT NOT NULL REFERENCES materia (id)
+
+);
+
+CREATE TABLE tarefa (
+    id BIGSERIAL PRIMARY KEY,
+    descricao VARCHAR(255) NOT NULL,
+    concluida BOOLEAN NOT NULL DEFAULT FALSE,
+    avaliacao_id BIGINT NOT NULL REFERENCES avaliacao (id) ON DELETE CASCADE
+);
