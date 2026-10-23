@@ -18,4 +18,4 @@ materia 1:N avaliacao 1:N tarefa
 
 ## Plano atual
 API REST do backend: `docs/plano-api.md`. O usuário digita o código; o Claude explica cada passo e revisa.
-Status: Passos 1 a 3 (entidades, repositories, DTOs) concluídos. Passo 4 (exceções) em andamento.
+Status: Passos 1 a 4 (entidades, repositories, DTOs, exceções) concluídos. Passo 5 (matéria: service + controller) em andamento.
