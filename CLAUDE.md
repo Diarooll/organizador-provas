@@ -18,4 +18,4 @@ materia 1:N avaliacao 1:N tarefa
 
 ## Plano atual
 API REST do backend: `docs/plano-api.md`. O usuário digita o código; o Claude explica cada passo e revisa.
-Status: Passo 1 (entidades JPA) em andamento.
+Status: Passo 1 (entidades JPA) concluído. Passo 2 (repositories) em andamento.
