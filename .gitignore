@@ -3,3 +3,8 @@
 .vscode/
 .DS_Store
 .env
+
+# Backups do banco (pg_dump) têm dados pessoais
+*.sql
+# ...mas as migrations do Flyway precisam ir pro git
+!backend/src/main/resources/db/migration/*.sql

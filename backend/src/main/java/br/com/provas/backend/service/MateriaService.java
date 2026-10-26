@@ -29,7 +29,7 @@ public class MateriaService {
     public MateriaResponse buscar(Long id){
         return paraResponse(buscarEntidade(id));
     }
-    
+
     @Transactional
     public MateriaResponse criar(MateriaRequest request){
         Materia materia = repository.save(new Materia(request.nome()));
