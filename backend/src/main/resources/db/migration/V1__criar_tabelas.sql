@@ -11,7 +11,6 @@ CREATE TABLE avaliacao (
     conteudo TEXT,
     status VARCHAR(20) NOT NULL DEFAULT 'PENDENTE',
     materia_id BIGINT NOT NULL REFERENCES materia (id)
-
 );
 
 CREATE TABLE tarefa (
