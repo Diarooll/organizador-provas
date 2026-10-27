@@ -95,6 +95,6 @@ public class AvaliacaoService {
     }
 
     private AvaliacaoResponse paraResponse(Avaliacao a) {
-        return new AvaliacaoResponse(a.getId(), a.getTitulo(), a.getTipo(), a.getData(), a.getConteudo(), a.getStatus(), a.getMateria().getId(), a.getMateria().getNome();
+        return new AvaliacaoResponse(a.getId(), a.getTitulo(), a.getTipo(), a.getData(), a.getConteudo(), a.getStatus(), a.getMateria().getId(), a.getMateria().getNome());
     }
 }
